@@ -1,86 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <script src="semantic/dist/semantic.min.js"></script>
-    <title>
-        Sign Up!
-    </title>
+    <link href="semantic/dist/semantic.min.css" rel="stylesheet" type=
+    "text/css">
+    <script src="semantic/dist/semantic.min.js">
+    </script>
+    <title>Sign Up!</title>
 </head>
-
 <body>
-    
     <header>
-        <h1>Amazeriffic</h1>
-        <div class="ui menu">
-            <a class="active item" href="signup.html">Sign up!</a> 
-            <a class="item" href="faq.html">FAQ</a> 
-            <a class="item" href="#">Support</a>
+        <div class="ui teal message">
+            <h1>Amazeriffic</h1>
+        </div>
+        <div class="ui inverted teal menu">
+            <a class="active item" href="signup.html">Sign up!</a> <a class=
+            "item" href="faq.html">FAQ</a> <a class="item" href="#">Support</a>
             <div class="right menu">
-
                 <div class="item">
-                   <div class="ui action left icon input">
-                        <i class="search icon"></i>
-                        <input type="text" placeholder="Search">
-                        <button class="ui button">Submit</button>
+                    <div class="ui action left icon input">
+                        <i class="search icon"></i> <input placeholder="Search"
+                        type="text"> <button class="ui button">Submit</button>
                     </div>
-                </div>
-                <a class="item">Link</a>
-             </div> 
+                </div><a class="item">Link</a>
+            </div>
         </div>
     </header>
-    <div class="ui middle aligned center aligned grid">
-       <p/>
-       <div class = "cloumn">   
-        <p><h1 class="ui teal image header">Sign Up</h1></p>
-        <form  class="ui large form" action=#>
-            <p>Username :
-                <input type="text" name="userName">
-            </p>
-            <p> E-mail address:
-                <input type="text" name="email">
-            </p>
-            <p> Password :
-                <input type="password" name="password">
-            </p>
-            <p> Password(again):
-                <input type="password" name="re-password">
-            </p>
-        </form>
-        <div class="ui animated button" tabindex="0">
-            <div class="visible content">Sign Up</div>
-            <div class="hidden content">Submit</div>
+    <div class="ui container">
+        <div class="ui middle aligned center aligned grid">
+            <div class="five wide column">
+                <p></p>
+                <h1 class="ui teal image header">Sign Up</h1>
+                <p></p>
+                <form action="#" class="ui large form">
+                    <div class="field">
+                        <p align="left">Username :</p>
+                        <div class="ui large left icon input">
+                            <i class="add user icon"></i> <input name=
+                            "userName" type="text">
+                        </div>
+                    </div>
+                    <p align="left">E-mail address:</p>
+                    <div class="ui left icon input">
+                        <i class="mail outline icon"></i> <input name="email"
+                        type="text">
+                    </div>
+                    <p align="left">Password :</p>
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i> <input name="password" type=
+                        "password">
+                    </div>
+                    <p align="left">Password(again):</p>
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i> <input name="re-password"
+                        type="password">
+                    </div>
+                </form>
+                <p></p>
+                <div class="ui animated button" tabindex="0">
+                    <div class="visible content">
+                        Sign Up
+                    </div>
+                    <div class="hidden content">
+                        Submit
+                    </div>
+                </div>
+                <p></p>
+            </div>
         </div>
-      </div>
     </div>
-    <footer>
-        <div class="contact">
-            <h5>Contact Us</h5>
-            <p>Amazeriffic!</p>
-            <p>555 Fiftieth Street</p>
-            <p>Asheville, NC 28801</p>
+    <div class="ui container">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="ui segment inverted">
+        <div class="ui container bottom">
+            <div class=
+            "ui inverted divided equal height stackable grid bottom">
+                <div class="one wide column"></div>
+                <div class="five wide column">
+                    <div class="contact">
+                        <h4>Contact Us</h4>
+                        <p>Amazeriffic!</p>
+                        <p>555 Fiftieth Street</p>
+                        <p>Asheville, NC 28801</p>
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="sitemap">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sitemap">
-            <h5>Sitemap</h5>
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="#">About Us</a>
-                </li>
-                <li><a href="#">Privacy</a>
-                </li>
-                <li><a href="#">Support</a>
-                </li>
-                <li><a href="faq.html">FAQ</a>
-                </li>
-                <li><a href="#">Careers</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
+    </div>
 </body>
-
 </html>
