@@ -4,6 +4,7 @@ main{
 }
 
 main strong{
+    color: #EF3054;
 	margin: 20px;
 	padding: 10px;
 	font-size: 24px;
@@ -17,6 +18,7 @@ p.question{
 	margin-top: 20px;
 	margin-bottom: 0;
 	width: 800px;
+	color:#7B2D26;
  
 }
 
@@ -26,5 +28,7 @@ p.answer{
 	margin: 5px;
 	margin-left: 50px;
 	margin-bottom: 40px;
+	color: #8C7051
 }
+
 
