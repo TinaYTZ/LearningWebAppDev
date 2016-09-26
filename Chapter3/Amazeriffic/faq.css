@@ -1,0 +1,30 @@
+main{
+	margin-top: 10px;
+	background-color: lightyellow;
+}
+
+main strong{
+	margin: 20px;
+	padding: 10px;
+	font-size: 24px;
+
+}
+
+p.question{
+	font-size: 20px;
+	margin: 0;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	width: 800px;
+ 
+}
+
+p.answer{
+	width: 800px;
+	font-size: 14px;
+	margin: 5px;
+	margin-left: 50px;
+	margin-bottom: 40px;
+}
+

@@ -1,25 +1,45 @@
+/* jshint browser: true, jquery: true, camelcase: true, indent: 2, undef: true, quotmark: single, maxlen: 80, trailing: true, curly: true, eqeqeq: true, forin: true, immed: true, latedef: true, newcap: true, nonew: true, unused: true, strict: true */
 var main = function () {
-    "use strict";
+    'use strict';
 
-    var addCommentFromInputBox = function () {
-        var $new_comment;
-
-        if ($(".comment-input input").val() !== "") {
-            $new_comment = $("<p>").text($(".comment-input input").val());
-            $new_comment.hide();
-            $(".comments").append($new_comment);
-            $new_comment.fadeIn();
-            $(".comment-input input").val("");
+    var addCommentFromInputBoxA = function () {
+        if ($('.comment-input input').val() !== '') {
+            var $newMessage= document.createElement('p');
+            $newMessage.setAttribute('class', 'chat_A');
+            $newMessage.innerHTML= $('.comment-inputA input').val();
+            $('.comments').append($newMessage);
+            $('.comment-inputA input').val('');
         }
     };
 
-    $(".comment-input button").on("click", function (event) {
-        addCommentFromInputBox();
+
+    var addCommentFromInputBoxB = function () {
+        if ($('.comment-input input').val() !== '') {
+            var $newMessage= document.createElement('p');
+            $newMessage.setAttribute('class', 'chat_B');
+            $newMessage.innerHTML= $('.comment-inputB input').val();
+            $('.comments').append($newMessage);
+            $('.comment-inputB input').val('');
+        }
+    };
+
+    $('.comment-inputA button').on('click', function () {
+        addCommentFromInputBoxA();
+    });
+    $('.comment-inputB button').on('click', function () {
+        addCommentFromInputBoxB();
     });
 
-    $(".comment-input input").on("keypress", function (event) {
+
+    $('.comment-inputA input').on('keypress', function (event) {
         if (event.keyCode === 13) {
-            addCommentFromInputBox();
+            addCommentFromInputBoxA();
+        }
+    });
+
+        $('.comment-inputB input').on('keypress', function (event) {
+        if (event.keyCode === 13) {
+            addCommentFromInputBoxB();
         }
     });
 };

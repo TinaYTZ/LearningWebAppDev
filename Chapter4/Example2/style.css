@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/*csslint order-alphabetical: false, box-model: false; */
 body {
     width: 855px;
     margin: auto;
@@ -18,10 +14,14 @@ header {
 
 h1 {
   float: left;
+  margin: 0;
+  padding: 0;
 }
 
 
 header p {
+  margin: 0;
+  padding: 0;
   float: right;
   width: 570px;
   font-style: italic;
@@ -35,23 +35,24 @@ main {
 }
 
 
-.comment-input {
+.comment-inputA,.comment-inputB {
   float: left;
   width: 285px;
+  margin: 30px;
 }
 
-.comment-input p {
+.comment-inputA p, .comment-inputB p{
   margin-bottom: 10px;
 }
 
-.comment-input input {
+.comment-inputA input,.comment-inputB input {
   width: 80%;
   height: 30px;
   font-size: 1.2em;
   font-weight: bold;
 }
 
-.comment-input button {
+.comment-inputA button, .comment-inputB button {
   font-weight: bold;
   padding: 3px;
   border-radius: 5px;
@@ -63,7 +64,11 @@ main {
 }
 
 .comments {
-  float: right;
+  border: 2px dotted;
+  padding: 30px;
+  margin: 30px;
+  overflow: auto;
+  float: left;
   width: 570px;
 }
 
@@ -73,12 +78,14 @@ main {
   border-radius: 5px;
 }
 
-.comments p:nth-child(even) {
+.chat_A{
     background: lavender;
+    text-align: left;
 }
 
-.comments p:nth-child(odd) {
-    background: gainsboro;
+.chat_B{
+    background: lightpink;
+    text-align: right;
 }
 
 footer {
