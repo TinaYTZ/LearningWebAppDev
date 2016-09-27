@@ -78,13 +78,21 @@ main {
   border-radius: 5px;
 }
 
-.chat_A{
+.chat_A:nth-child(even){
     background: lavender;
     text-align: left;
 }
+.chat_A:nth-child(odd){
+    background: lightblue;
+    text-align: left;
+}
 
-.chat_B{
+.chat_B:nth-child(even){
     background: lightpink;
+    text-align: right;
+}
+.chat_B:nth-child(odd){
+    background: red;
     text-align: right;
 }
 
