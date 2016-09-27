@@ -3,7 +3,7 @@ var main = function () {
     'use strict';
 
     var addCommentFromInputBoxA = function () {
-        if ($('.comment-input input').val() !== '') {
+        if ($('.comment-inputA input').val() !=='') {
             var $newMessage= document.createElement('p');
             $newMessage.setAttribute('class', 'chat_A');
             $newMessage.innerHTML= $('.comment-inputA input').val();
@@ -14,7 +14,7 @@ var main = function () {
 
 
     var addCommentFromInputBoxB = function () {
-        if ($('.comment-input input').val() !== '') {
+        if ($('.comment-inputB input').val() !== '') {
             var $newMessage= document.createElement('p');
             $newMessage.setAttribute('class', 'chat_B');
             $newMessage.innerHTML= $('.comment-inputB input').val();
