@@ -71,6 +71,13 @@ main {
   float: left;
   width: 570px;
 }
+.comments p:nth-child(odd){
+   background: lavender;
+}
+
+.comments p:nth-child(even){
+   background: lightblue;
+}
 
 .comments p {
   padding: 5px;
@@ -78,21 +85,14 @@ main {
   border-radius: 5px;
 }
 
-.chat_A:nth-child(even){
-    background: lavender;
-    text-align: left;
-}
-.chat_A:nth-child(odd){
-    background: lightblue;
+.chat_A{
+    color:blue;
     text-align: left;
 }
 
-.chat_B:nth-child(even){
-    background: lightpink;
-    text-align: right;
-}
-.chat_B:nth-child(odd){
-    background: red;
+
+.chat_B{
+    color: red;
     text-align: right;
 }
 
