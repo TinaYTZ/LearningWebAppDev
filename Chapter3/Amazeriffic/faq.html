@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="reset.css" rel="stylesheet" type="text/css">
-    <link href="semantic/dist/semantic.min.css" rel="stylesheet" type=
-    "text/css">
-    <script src="semantic/dist/semantic.min.js">
-    </script>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="faq.css" rel="stylesheet" type="text/css">
     <title>
         Frequently Asked Questions
@@ -15,22 +12,12 @@
 
 <body>
     <header>
-        <div class="ui teal message">
-            <h1>Amazeriffic</h1>
-        </div>
-        <div class="ui inverted teal menu">
-            <a class="item" href="signup.html">Sign up!</a> 
-            <a class="active item" href="faq.html">FAQ</a> 
-            <a class="item" href="#">Support</a>
-            <div class="right menu">
-                <div class="item">
-                    <div class="ui action left icon input">
-                        <i class="search icon">&nbsp;</i> <input placeholder="Search"
-                        type="text"> <button class="ui button">Submit</button>
-                    </div>
-                </div><a class="item">Link</a>
-            </div>
-        </div>
+        <h1>Amazeriffic</h1>
+        <nav>
+            <a href="signup.html">Sign up!</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="#">Support</a>
+        </nav>
     </header>
     <main>
         <strong>Frequently Asked Questions</strong>
@@ -54,47 +41,29 @@
             </li>
         </ol>
     </main>
-    <div class="ui segment inverted">
-        <div class="ui container bottom">
-            <div class=
-            "ui inverted divided equal height stackable grid bottom">
-                <div class="one wide column"></div>
-                <div class="five wide column">
-                    <div class="contact">
-                        <h4>Contact Us</h4>
-                        <p>Amazeriffic!</p>
-                        <p>555 Fiftieth Street</p>
-                        <p>Asheville, NC 28801</p>
-                    </div>
-                </div>
-                <div class="five wide column">
-                    <div class="sitemap">
-                        <h4>Sitemap</h4>
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Support</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="left">
+          <div class="contact">
+            <h5>Contact Us</h5>
+            <p>Amazeriffic!</p>
+            <p>555 Fiftieth Street</p>
+            <p>Asheville, NC 28801</p>
+          </div>
         </div>
-    </div>
+        <div class="sitemap">
+          <h5>Sitemap</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
