@@ -78,20 +78,20 @@ main {
   border-radius: 5px;
 }
 
-.chat_A:nth-child(even){
+p.chat_A_Odd{
     background: lavender;
     text-align: left;
 }
-.chat_A:nth-child(odd){
+p.chat_A_Even{
     background: lightblue;
     text-align: left;
 }
 
-.chat_B:nth-child(even){
+p.chat_B_Odd{
     background: lightpink;
     text-align: right;
 }
-.chat_B:nth-child(odd){
+p.chat_B_Even{
     background: red;
     text-align: right;
 }
