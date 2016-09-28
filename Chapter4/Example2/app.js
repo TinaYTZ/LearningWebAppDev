@@ -23,7 +23,7 @@ var main = function () {
     var addCommentFromInputBoxB = function () {
         if ($('.comment-inputB input').val() !== '') {
             var $newMessage= document.createElement('p');
-            if(a%2!=0)
+            if(b%2!=0)
             {
               $newMessage.setAttribute('class', 'chat_B_Odd');
               
